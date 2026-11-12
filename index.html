@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قهوه‌خانهٔ زر — تجربه‌ای متفاوت از قهوه</title>
+<meta name="description" content="قهوه‌خانهٔ زر | فروش بهترین قهوه‌های تخصصی جهان با تجربه‌ای سه‌بعدی و مدرن">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="cup-steam">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="preloader-text">قهوه‌خانهٔ <b>زر</b></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav class="navbar" id="navbar">
+  <a class="logo" href="#hero">قهوه‌خانهٔ <span>زر</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">خانه</a></li>
+    <li><a href="#about">داستان ما</a></li>
+    <li><a href="#menu">منوی قهوه</a></li>
+    <li><a href="#lab">آزمایشگاه سه‌بعدی</a></li>
+    <li><a href="#gallery">گالری</a></li>
+    <li><a href="#contact">تماس</a></li>
+  </ul>
+  <button class="cart-btn" id="cartBtn" aria-label="سبد خرید">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M6 7h12l-1.2 12.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span class="cart-count" id="cartCount">۰</span>
+  </button>
+  <button class="burger" id="burger" aria-label="منو"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1920&q=80">
+    <source src="https://videos.pexels.com/video-files/2909914/2909914-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+  <div class="hero-content">
+    <p class="hero-kicker reveal">از مزرعه تا فنجان — با عشق برشته‌کاری می‌کنیم</p>
+    <h1 class="hero-title reveal">هر فنجان،<br><em>یک سفر</em> به اعماق طعم</h1>
+    <p class="hero-sub reveal">دانه‌های تک‌خاستگاه از کلمبیا، اتیوپی و برزیل؛ برشته‌شده در روزِ سفارش شما و ارسال‌شده با عطرِ تازهٔ-first flush. همین حالا سفارش بده و تفاوت را حس کن.</p>
+    <div class="hero-actions reveal">
+      <a href="#menu" class="btn btn-gold">مشاهده منو</a>
+      <a href="#lab" class="btn btn-ghost">فنجان را بچرخان ⟳</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>۱۰۰٪ عربیکا ✦ رست روزِ سفارش ✦ ارسال سریع ✦ دانهٔ تک‌خاستگاه ✦ آسیاب اختصاصی ✦ قهوه‌خانهٔ زر ✦</span>
+    <span>۱۰۰٪ عربیکا ✦ رست روزِ سفارش ✦ ارسال سریع ✦ دانهٔ تک‌خاستگاه ✦ آسیاب اختصاصی ✦ قهوه‌خانهٔ زر ✦</span>
+  </div>
+</div>
+
+<section class="about section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="about-img-main">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="لاته آرت" loading="lazy">
+      </div>
+      <div class="about-img-small">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80" alt="دانه‌های قهوه" loading="lazy">
+      </div>
+      <div class="about-badge"><b>۱۲+</b><span>سال تجربه</span></div>
+    </div>
+    <div class="about-text">
+      <p class="section-kicker reveal">داستان ما</p>
+      <h2 class="section-title reveal">شورِ یک فنجان،<br>میراثِ سه نسل</h2>
+      <p class="reveal">ما در «زر» باور داریم قهوه فقط یک نوشیدنی نیست؛ یک آیین است. دانه‌های ما مستقیم از کشاورزان کوچک کلمبیا، اتیوپی و گواتمالا تهیه می‌شوند، در کارگاه خودمان با برشته‌کاری دقیق پردازش می‌شوند و حداکثر ۷۲ ساعت پس از سفارش، تازه آسیاب و ارسال می‌گردند.</p>
+      <ul class="about-features">
+        <li class="reveal"><b>🌱</b><div><h4>منبع‌یابی مستقیم</h4><p>قرارداد مستقیم با مزارع، بدون واسطه</p></div></li>
+        <li class="reveal"><b>🔥</b><div><h4>رست تخصصی</h4><p>پروفایل برشته‌کاری اختصاصی برای هر دانه</p></div></li>
+        <li class="reveal"><b>🚀</b><div><h4>تازگی تضمینی</h4><p>ارسال کمتر از ۷۲ ساعت پس از رست</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="menu section" id="menu">
+  <div class="container">
+    <p class="section-kicker center reveal">منوی قهوه</p>
+    <h2 class="section-title center reveal">محبوب‌ترین‌های <em>زر</em></h2>
+    <div class="menu-grid">
+      <article class="menu-card reveal" data-name="اسپرسو کلاسیک" data-price="۸۵٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=700&q=80" alt="اسپرسو" loading="lazy"><span class="menu-tag">پرفروش</span></div>
+        <div class="menu-body">
+          <h3>اسپرسو کلاسیک</h3><p>شات غلیظ با کرما طلایی و پایان‌بندی شکلاتی</p>
+          <div class="menu-foot"><span class="price">۸۵٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+      <article class="menu-card reveal" data-name="لاته زعفرانی" data-price="۱۲۰٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="لاته" loading="lazy"><span class="menu-tag gold">امضای زر</span></div>
+        <div class="menu-body">
+          <h3>لاته زعفرانی</h3><p>اسپرسو، شیر بخارپز مخملی و رگهٔ زعفران ایرانی</p>
+          <div class="menu-foot"><span class="price">۱۲۰٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+      <article class="menu-card reveal" data-name="وت کافه" data-price="۹۵٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="وت کافه" loading="lazy"></div>
+        <div class="menu-body">
+          <h3>وت کافه</h3><p>نرم و لطیف با نت‌های کارامل و فندق</p>
+          <div class="menu-foot"><span class="price">۹۵٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+      <article class="menu-card reveal" data-name="دانهٔ اتیوپی" data-price="۳۹۰٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=700&q=80" alt="دانه قهوه" loading="lazy"><span class="menu-tag">تک‌خاستگاه</span></div>
+        <div class="menu-body">
+          <h3>دانهٔ اتیوپی یرگاچف</h3><p>نت‌های گل‌بهارنارنج و لیمو — ۲۵۰ گرم، رست روشن</p>
+          <div class="menu-foot"><span class="price">۳۹۰٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+      <article class="menu-card reveal" data-name="قهوه سرد" data-price="۱۱۰٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=700&q=80" alt="آیس کافه" loading="lazy"></div>
+        <div class="menu-body">
+          <h3>کلد برو زر</h3><p>۱۸ ساعت دم‌آوری سرد، صاف و پرکافئین</p>
+          <div class="menu-foot"><span class="price">۱۱۰٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+      <article class="menu-card reveal" data-name="موکا" data-price="۱۳۰٬۰۰۰">
+        <div class="menu-img"><img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=700&q=80" alt="موکا" loading="lazy"></div>
+        <div class="menu-body">
+          <h3>موکای شکلات بلژیکی</h3><p>اسپرسو، شکلات ۷۰٪ و خامهٔ تازه</p>
+          <div class="menu-foot"><span class="price">۱۳۰٬۰۰۰ <small>تومان</small></span><button class="add-btn">افزودن +</button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="lab section" id="lab">
+  <div class="container">
+    <p class="section-kicker center reveal">آزمایشگاه سه‌بعدی</p>
+    <h2 class="section-title center reveal">فنجان را <em>بچرخان</em></h2>
+    <p class="lab-hint reveal">با کشیدن ماوس (یا انگشت) روی صحنه، فنجان و دانه‌ها را بچرخان ✦ با اسکرول روی صحنه زوم کن</p>
+    <div class="lab-stage reveal" id="labStage">
+      <canvas id="labCanvas"></canvas>
+      <div class="lab-caption">
+        <span>مدل سه‌بعدی: فنجان زر</span>
+        <span class="lab-dot"></span>
+        <span>WebGL · Three.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showreel section" id="showreel">
+  <div class="container">
+    <p class="section-kicker center reveal">پشت صحنه</p>
+    <h2 class="section-title center reveal">رست‌کاری را <em>ببین</em></h2>
+    <div class="reel-wrap reveal">
+      <video controls muted loop playsinline poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80">
+        <source src="https://videos.pexels.com/video-files/2909914/2909914-hd_1920_1080_25fps.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <p class="section-kicker center reveal">گالری</p>
+    <h2 class="section-title center reveal">لحظه‌های <em>زر</em></h2>
+    <div class="gallery-grid">
+      <figure class="g-item tall reveal"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="کافه" loading="lazy"></figure>
+      <figure class="g-item reveal"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="باريستا" loading="lazy"></figure>
+      <figure class="g-item reveal"><img src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=800&q=80" alt="قهوه سرد" loading="lazy"></figure>
+      <figure class="g-item reveal"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="قهوه و شیرینی" loading="lazy"></figure>
+      <figure class="g-item tall reveal"><img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=800&q=80" alt="فضای کافه" loading="lazy"></figure>
+      <figure class="g-item reveal"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="فنجان قهوه" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta section" id="contact">
+  <div class="container cta-box reveal">
+    <h2>عطرِ تازهٔ رست،<br><em>فقط یک کلیک فاصله دارد</em></h2>
+    <p>عضو خبرنامهٔ زر شو و ۲۰٪ تخفیف اولین سفارشت را بگیر.</p>
+    <form class="cta-form" id="subscribeForm">
+      <input type="email" placeholder="ایمیل یا شمارهٔ موبایل" required>
+      <button class="btn btn-gold" type="submit">عضویت</button>
+    </form>
+    <div class="cta-socials">
+      <a href="#" aria-label="اینستاگرام">◎</a>
+      <a href="#" aria-label="تلگرام">✈</a>
+      <a href="#" aria-label="واتس‌اپ">✆</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#hero">قهوه‌خانهٔ <span>زر</span></a>
+      <p>تهران، خیابان ولیعصر، کوچهٔ عطر، پلاک ۷</p>
+      <p>هر روز ۸ صبح تا ۱۱ شب</p>
+    </div>
+    <div>
+      <h4>دسترسی سریع</h4>
+      <a href="#about">داستان ما</a>
+      <a href="#menu">منو</a>
+      <a href="#lab">آزمایشگاه سه‌بعدی</a>
+    </div>
+    <div>
+      <h4>تماس</h4>
+      <a href="tel:0210000000">۰۲۱-۰۰۰۰۰۰۰۰</a>
+      <a href="mailto:hi@zarcoffee.ir">hi@zarcoffee.ir</a>
+    </div>
+  </div>
+  <p class="copyright">© ۱۴۰۳ قهوه‌خانهٔ زر — ساخته‌شده با ☕ و ❤</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/three-scene.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
